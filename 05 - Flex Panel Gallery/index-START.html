@@ -60,7 +60,6 @@
       margin:0;
       width: 100%;
       transition:transform 0.5s;
-      border: 1px solid red;
       flex: 1 0 auto;
       display: flex;
       justify-content: center;
@@ -85,6 +84,7 @@
     }
 
     .panel.open {
+      flex: 5;
       font-size:40px;
     }
 
@@ -125,6 +125,10 @@
   </div>
 
   <script>
+  const panels = document.querySelectorAll('.panels');
+  function toggleOpen() {
+    this.classList.toggle('open');
+  }
 
   </script>
 
